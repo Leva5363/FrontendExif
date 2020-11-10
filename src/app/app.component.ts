@@ -46,6 +46,7 @@ export class AppComponent implements OnInit {
   }
 
   onClick() {
+  this.files = [];
     const fileUpload = this.fileUpload.nativeElement;
     fileUpload.onchange = () => {
       for (let index = 0; index < fileUpload.files.length; index++)
